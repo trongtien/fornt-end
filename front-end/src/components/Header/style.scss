@@ -1,0 +1,34 @@
+$color-text: #FFFFFF;
+
+.header {
+  background: #ffa233;
+  
+  height: 5rem;
+
+  .navbar{
+    line-height: 3rem;
+
+    .text-logo{
+      font-weight: bold;
+      font-size: 40px;
+      color: $color-text;
+    }
+    .collapse {
+      font-size: 20px;
+      a{
+        color: $color-text;
+      }
+      .navbar-text{
+        margin-right: 10px;
+        font-style: bold;
+        color: $color-text;
+        cursor: pointer;
+      }
+
+      .input-group{
+        width: 300px;
+        margin-right: 29px;
+      }
+    }
+  }
+}
