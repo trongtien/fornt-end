@@ -1,9 +1,12 @@
 import React from 'react'
+import ProductComponent from '../components/Product/ProductComponent'
+import BlogComponent from '../components/Blog/BlogComponent'
 
-const HomePage = () => {
+function HomePage() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="home-page">
+      <ProductComponent />
+      <BlogComponent />
     </div>
   )
 }

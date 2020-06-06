@@ -8,7 +8,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -41,12 +40,13 @@ function HeaderComponent(props) {
         <Collapse navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              {/* <NavLink to="/">Trang Chủ</NavLink> */}
               <Link className="nav-link" to="/">Trang Chủ</Link>
             </NavItem>
             <NavItem>
-              {/* <NavLink to="/Introduction">Giới thiệu</NavLink> */}
               <Link className="nav-link" to="/Introduction">Giới thiệu</Link>
+            </NavItem>
+            <NavItem>
+              <Link className="nav-link" to="/Introduction">Blog</Link>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -75,8 +75,8 @@ function HeaderComponent(props) {
           </InputGroup>
 
           <NavbarText onClick={() => handlClick()} > Đăng Nhập </NavbarText>
-          <NavbarText to="/register"> Đăng Ký </NavbarText>
-          <NavbarText>Giỏ Hàng</NavbarText>
+          <Link to="/register">Đăng Ký</Link>
+          <Link to="/card">Giỏ Hàng</Link>
         </Collapse>
       </Navbar>
     </header >

@@ -17,9 +17,10 @@ $color-text: #FFFFFF;
       font-size: 20px;
       a{
         color: $color-text;
+        margin-left: 10px;
       }
       .navbar-text{
-        margin-right: 10px;
+        margin-right: 2px;
         font-style: bold;
         color: $color-text;
         cursor: pointer;
